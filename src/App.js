@@ -3,6 +3,7 @@ import { probit, erf } from 'simple-statistics';
 import Latex from 'react-latex-next';
 import 'katex/dist/katex.min.css';
 import './App.css';
+import MuaTool from './components/MuaTool';
 
 // --- HELPER FUNCTIONS ---
 function bivariateNormalCDF(x, y, rho) {
@@ -1411,8 +1412,9 @@ function App() {
                         )}
                     </main>
                 </div>
-                
+
             </div>
+            <MuaTool />
         </div>
     );
 }
